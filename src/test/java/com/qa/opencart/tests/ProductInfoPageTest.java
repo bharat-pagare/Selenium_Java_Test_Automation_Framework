@@ -54,13 +54,13 @@ public class ProductInfoPageTest extends BaseTest {
         Map<String, String> productData = productInfoPage.getProductData();
         SoftAssert softAssert = new SoftAssert();
 
-        softAssert.assertEquals(productData.get("Brand"),"Apple");
+        softAssert.assertEquals(productData.get("Brand"),"Apple1");
         softAssert.assertEquals(productData.get("Availability"),"In Stock");
         softAssert.assertEquals(productData.get("Product Price"),"$602.00");
         softAssert.assertEquals(productData.get("Ex Tax"),"$500.00");
-        softAssert.assertEquals(productData.get("Product Code"),"Product 16");
+        softAssert.assertEquals(productData.get("Product Code"),"Product2 16");
         softAssert.assertEquals(productData.get("Reward Points"),"600");
-        softAssert.assertEquals(productData.get("Product Name"),"MacBook");
+        softAssert.assertEquals(productData.get("Product Name"),"MacBook1");
         softAssert.assertEquals(productData.get("Product Images Count"),"5");
         softAssert.assertAll();
     }

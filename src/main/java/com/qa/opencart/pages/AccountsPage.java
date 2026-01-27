@@ -2,6 +2,7 @@ package com.qa.opencart.pages;
 
 import com.qa.opencart.constants.AppConstants;
 import com.qa.opencart.utils.ElementUtil;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,6 +21,8 @@ public class AccountsPage {
         this.driver = driver;
         eleUtil= new ElementUtil(driver);
     }
+
+    @Step("getting Accounts page header")
     public List<String> getAccountsPageHeaders(){
         List<WebElement> headersList = eleUtil.waitForElementsPresence(headers, AppConstants.DEFAULT_SHORT_WAIT);
         System.out.println("Total no. of Headers "+headersList.size());
@@ -30,9 +33,13 @@ public class AccountsPage {
         }
         return headersValList;
     }
+
+    @Step("logout link exist...")
     public boolean isLogOutLinkExists(){
         return eleUtil.isElementDisplayed(logoutLink);
     }
+
+    @Step("performing search action for {0}")
     public SearchResultsPage doSearch(String searchKey){
         System.out.println("Product searched --> "+searchKey);
         WebElement searchEle = eleUtil.waitForElementVisible(search, AppConstants.DEFAULT_SHORT_WAIT);

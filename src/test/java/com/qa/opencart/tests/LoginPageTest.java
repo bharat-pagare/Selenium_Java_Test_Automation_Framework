@@ -14,7 +14,7 @@ public class LoginPageTest extends BaseTest {
 
     @Description("login page title test.....")
     @Link("")
-    @Owner("Naveen Automation Labs")
+    @Owner("Bharat")
     @Severity(SeverityLevel.MINOR)
     @Test
     public void loginPageTitleTest(){
@@ -24,7 +24,7 @@ public class LoginPageTest extends BaseTest {
     }
 
     @Description("login page url test....")
-    @Owner("Naveen Automation Labs")
+    @Owner("Bharat")
     @Severity(SeverityLevel.NORMAL)
     @Test
     public void loginPageURLTest(){
@@ -33,7 +33,7 @@ public class LoginPageTest extends BaseTest {
     }
 
     @Description("forgot password link exist test....")
-    @Owner("Naveen Automation Labs")
+    @Owner("Bharat")
     @Severity(SeverityLevel.CRITICAL)
     @Test
     public void isForgotPwdLinkExistTest(){
@@ -41,7 +41,7 @@ public class LoginPageTest extends BaseTest {
     }
 
     @Description("login page header test....")
-    @Owner("Naveen Automation Labs")
+    @Owner("Bharat")
     @Severity(SeverityLevel.MINOR)
     @Test
     public void isHeaderExists(){
@@ -49,7 +49,7 @@ public class LoginPageTest extends BaseTest {
     }
 
     @Description("user is able to login to app with the correct credentials....")
-    @Owner("Naveen Automation Labs")
+    @Owner("Bharat")
     @Severity(SeverityLevel.BLOCKER)
     @Test
     public void loginTest(){
